@@ -1,0 +1,265 @@
+DRASC BENCHMARK SUMMARY
+generated: 2026-06-13 14:07:02
+
+===== main_benchmark ARI_mean =====
+algo                           Ablation-B (adaptive only, g=0)  Agglomerative  BIRCH  DBSCAN  DPC (Sci.2014)  DRASC (proposed)  FINCH (2019)  GMM (EM)  HDBSCAN  LSC (anchor spectral)  Spectral (RBF)  Spectral (kNN)  k-means++
+dataset                                                                                                                                                                                                                          
+Banknote Authentication (UCI)                            0.244          0.080  0.124   0.824           0.920             0.514         0.392     0.023    0.387                  0.290           0.124           0.164      0.013
+Breast Cancer Wisconsin (UCI)                            0.743          0.575  0.603   0.281           0.374             0.743         0.583     0.774    0.147                  0.760           0.641           0.780      0.671
+Digits 8x8 (UCI handwritten)                             0.708          0.664  0.664   0.299           0.539             0.807         0.662     0.499    0.202                  0.774           0.480           0.712      0.468
+Fashion-MNIST (10k, PCA-50)                              0.450          0.296  0.327   0.052             NaN             0.447         0.430     0.284    0.047                  0.469             NaN           0.445      0.342
+Image Segmentation (UCI)                                 0.370          0.475  0.406   0.309           0.541             0.378         0.440     0.510    0.443                  0.493           0.417           0.369      0.461
+MNIST (10k, PCA-50)                                      0.442          0.300  0.276   0.064             NaN             0.466         0.374     0.129    0.056                  0.479             NaN           0.368      0.180
+Olivetti Faces (AT&T, PCA-50)                            0.634          0.499  0.503   0.065           0.545             0.637         0.694     0.493    0.042                  0.599           0.450           0.500      0.488
+Pen Digits (UCI)                                         0.776          0.580  0.586   0.574           0.628             0.800         0.620     0.578    0.586                  0.761           0.549           0.709      0.561
+Satimage / Landsat (UCI)                                 0.524          0.485  0.527   0.324           0.531             0.602         0.313     0.562    0.092                  0.583           0.475           0.498      0.521
+Seeds (UCI)                                              0.811          0.797  0.758   0.405           0.800             0.836         0.701     0.890    0.290                  0.768           0.811           0.822      0.773
+USPS (PCA-50)                                            0.625          0.437  0.466   0.120             NaN             0.635         0.578     0.402    0.082                  0.675             NaN           0.596      0.442
+Vehicle Silhouettes (UCI)                                0.129          0.092  0.102   0.110           0.117             0.136         0.095     0.109    0.090                  0.146           0.070           0.119      0.076
+Wine (UCI)                                               0.931          0.790  0.790   0.430           0.699             0.931         0.686     0.915    0.266                  0.908           0.930           0.915      0.898
+
+Mean rank (main_benchmark, ARI_mean):
+algo
+DRASC (proposed)                    2.65
+LSC (anchor spectral)               3.23
+Ablation-B (adaptive only, g=0)     4.27
+Spectral (kNN)                      5.23
+DPC (Sci.2014)                      5.60
+GMM (EM)                            6.62
+FINCH (2019)                        7.00
+BIRCH                               7.42
+Agglomerative                       8.00
+k-means++                           8.62
+Spectral (RBF)                      8.85
+DBSCAN                             10.23
+HDBSCAN                            10.85
+Wins (main_benchmark, ARI_mean):
+LSC (anchor spectral)              4
+DRASC (proposed)                   3
+DPC (Sci.2014)                     2
+Spectral (kNN)                     1
+FINCH (2019)                       1
+GMM (EM)                           1
+Ablation-B (adaptive only, g=0)    1
+Friedman (main_benchmark ARI): chi2=64.897 p=4.2419e-10
+Wilcoxon DRASC vs Spectral (kNN) (main_benchmark): p=0.003418
+Wilcoxon DRASC vs GMM (EM) (main_benchmark): p=0.02661
+Wilcoxon DRASC vs k-means++ (main_benchmark): p=0.003418
+Wilcoxon DRASC vs LSC (anchor spectral) (main_benchmark): p=0.4143
+Wilcoxon DRASC vs Agglomerative (main_benchmark): p=0.001221
+Wilcoxon DRASC vs BIRCH (main_benchmark): p=0.0004883
+Wilcoxon DRASC vs DBSCAN (main_benchmark): p=0.002441
+
+===== main_benchmark NMI_mean =====
+algo                           Ablation-B (adaptive only, g=0)  Agglomerative  BIRCH  DBSCAN  DPC (Sci.2014)  DRASC (proposed)  FINCH (2019)  GMM (EM)  HDBSCAN  LSC (anchor spectral)  Spectral (RBF)  Spectral (kNN)  k-means++
+dataset                                                                                                                                                                                                                          
+Banknote Authentication (UCI)                            0.181          0.080  0.212   0.723           0.876             0.431         0.318     0.019    0.454                  0.301           0.205           0.118      0.011
+Breast Cancer Wisconsin (UCI)                            0.625          0.457  0.480   0.247           0.291             0.626         0.472     0.661    0.228                  0.660           0.544           0.685      0.555
+Digits 8x8 (UCI handwritten)                             0.807          0.796  0.796   0.572           0.713             0.866         0.774     0.685    0.557                  0.852           0.608           0.819      0.627
+Fashion-MNIST (10k, PCA-50)                              0.637          0.530  0.517   0.144             NaN             0.634         0.588     0.461    0.100                  0.604             NaN           0.628      0.537
+Image Segmentation (UCI)                                 0.582          0.626  0.558   0.552           0.647             0.545         0.609     0.661    0.633                  0.605           0.604           0.566      0.585
+MNIST (10k, PCA-50)                                      0.608          0.495  0.492   0.179             NaN             0.629         0.526     0.332    0.170                  0.582             NaN           0.619      0.329
+Olivetti Faces (AT&T, PCA-50)                            0.861          0.833  0.835   0.495           0.840             0.864         0.897     0.817    0.350                  0.848           0.800           0.838      0.812
+Pen Digits (UCI)                                         0.838          0.735  0.743   0.742           0.755             0.857         0.769     0.720    0.752                  0.823           0.661           0.819      0.704
+Satimage / Landsat (UCI)                                 0.639          0.594  0.607   0.464           0.627             0.675         0.423     0.640    0.235                  0.657           0.521           0.627      0.612
+Seeds (UCI)                                              0.760          0.750  0.750   0.478           0.756             0.791         0.678     0.857    0.382                  0.731           0.763           0.779      0.728
+USPS (PCA-50)                                            0.773          0.597  0.609   0.332             NaN             0.789         0.719     0.546    0.368                  0.739             NaN           0.762      0.572
+Vehicle Silhouettes (UCI)                                0.185          0.118  0.139   0.177           0.187             0.190         0.159     0.138    0.144                  0.202           0.134           0.182      0.116
+Wine (UCI)                                               0.909          0.786  0.786   0.537           0.726             0.909         0.714     0.892    0.361                  0.882           0.901           0.893      0.876
+
+Mean rank (main_benchmark, NMI_mean):
+algo
+DRASC (proposed)                    2.73
+Ablation-B (adaptive only, g=0)     4.04
+LSC (anchor spectral)               4.15
+Spectral (kNN)                      4.62
+DPC (Sci.2014)                      5.70
+FINCH (2019)                        6.77
+GMM (EM)                            6.85
+BIRCH                               7.73
+Agglomerative                       8.12
+Spectral (RBF)                      8.50
+k-means++                           9.15
+DBSCAN                             10.08
+HDBSCAN                            10.08
+Wins (main_benchmark, NMI_mean):
+DRASC (proposed)                   5
+GMM (EM)                           2
+Ablation-B (adaptive only, g=0)    2
+Spectral (kNN)                     1
+DPC (Sci.2014)                     1
+FINCH (2019)                       1
+LSC (anchor spectral)              1
+
+===== unsup_silhouette ARI_mean =====
+algo                           Ablation-B (adaptive only, g=0)  Agglomerative  BIRCH  DBSCAN  DPC (Sci.2014)  DRASC (proposed)  FINCH (2019)  GMM (EM)  HDBSCAN  LSC (anchor spectral)  Spectral (RBF)  Spectral (kNN)  k-means++
+dataset                                                                                                                                                                                                                          
+Banknote Authentication (UCI)                            0.032          0.072  0.110   0.172           0.909             0.148         0.392     0.015    0.008                  0.128           0.124           0.019      0.013
+Breast Cancer Wisconsin (UCI)                            0.713          0.005  0.575   0.028           0.374             0.737         0.583     0.700    0.119                  0.721           0.005           0.767      0.671
+Digits 8x8 (UCI handwritten)                             0.644          0.000  0.664   0.001           0.539             0.640         0.662     0.485    0.003                  0.640           0.000           0.638      0.468
+Fashion-MNIST (10k, PCA-50)                              0.449          0.000  0.189   0.002             NaN             0.441         0.430     0.289    0.011                  0.417             NaN           0.323      0.342
+Image Segmentation (UCI)                                 0.372          0.000  0.106   0.224           0.541             0.371         0.440     0.510    0.221                  0.451           0.000           0.360      0.461
+MNIST (10k, PCA-50)                                      0.442          0.000  0.001   0.001             NaN             0.395         0.374     0.057    0.013                  0.378             NaN           0.368      0.180
+Olivetti Faces (AT&T, PCA-50)                            0.606          0.499  0.499   0.000           0.545             0.607         0.694     0.493    0.042                  0.599           0.402           0.432      0.488
+Pen Digits (UCI)                                         0.624          0.580  0.512   0.548           0.594             0.627         0.620     0.578    0.500                  0.622           0.430           0.618      0.561
+Satimage / Landsat (UCI)                                 0.495          0.258  0.527   0.084           0.437             0.499         0.313     0.499    0.089                  0.513           0.323           0.464      0.521
+Seeds (UCI)                                              0.798          0.797  0.641   0.405           0.740             0.786         0.701     0.782    0.290                  0.754           0.811           0.785      0.773
+USPS (PCA-50)                                            0.616          0.000  0.379   0.003             NaN             0.619         0.578     0.408    0.082                  0.518             NaN           0.596      0.442
+Vehicle Silhouettes (UCI)                                0.109          0.001  0.086   0.000           0.094             0.108         0.095     0.077    0.001                  0.111           0.001           0.117      0.076
+Wine (UCI)                                               0.915          0.790  0.790  -0.008           0.699             0.915         0.686     0.873    0.266                  0.908           0.930           0.915      0.898
+
+Mean rank (unsup_silhouette, ARI_mean):
+algo
+DRASC (proposed)                    3.23
+Ablation-B (adaptive only, g=0)     3.46
+LSC (anchor spectral)               4.08
+FINCH (2019)                        5.23
+Spectral (kNN)                      5.38
+DPC (Sci.2014)                      6.20
+GMM (EM)                            6.77
+k-means++                           6.85
+BIRCH                               7.46
+Spectral (RBF)                      8.90
+Agglomerative                       9.69
+DBSCAN                             10.62
+HDBSCAN                            10.85
+Wins (unsup_silhouette, ARI_mean):
+DPC (Sci.2014)                     2
+Spectral (kNN)                     2
+BIRCH                              2
+Ablation-B (adaptive only, g=0)    2
+DRASC (proposed)                   2
+Spectral (RBF)                     2
+FINCH (2019)                       1
+Friedman (unsup_silhouette ARI): chi2=69.495 p=5.5486e-11
+Wilcoxon DRASC vs Spectral (kNN) (unsup_silhouette): p=0.03418
+Wilcoxon DRASC vs GMM (EM) (unsup_silhouette): p=0.0105
+Wilcoxon DRASC vs k-means++ (unsup_silhouette): p=0.0105
+Wilcoxon DRASC vs LSC (anchor spectral) (unsup_silhouette): p=0.09424
+Wilcoxon DRASC vs Agglomerative (unsup_silhouette): p=0.0004883
+Wilcoxon DRASC vs BIRCH (unsup_silhouette): p=0.002441
+Wilcoxon DRASC vs DBSCAN (unsup_silhouette): p=0.0004883
+
+===== unsup_silhouette NMI_mean =====
+algo                           Ablation-B (adaptive only, g=0)  Agglomerative  BIRCH  DBSCAN  DPC (Sci.2014)  DRASC (proposed)  FINCH (2019)  GMM (EM)  HDBSCAN  LSC (anchor spectral)  Spectral (RBF)  Spectral (kNN)  k-means++
+dataset                                                                                                                                                                                                                          
+Banknote Authentication (UCI)                            0.019          0.153  0.177   0.373           0.862             0.223         0.318     0.012    0.031                  0.142           0.205           0.010      0.011
+Breast Cancer Wisconsin (UCI)                            0.592          0.010  0.457   0.018           0.291             0.619         0.472     0.628    0.199                  0.602           0.010           0.677      0.555
+Digits 8x8 (UCI handwritten)                             0.755          0.014  0.796   0.015           0.713             0.754         0.774     0.619    0.034                  0.755           0.002           0.769      0.627
+Fashion-MNIST (10k, PCA-50)                              0.636          0.002  0.431   0.030             NaN             0.623         0.588     0.501    0.058                  0.589             NaN           0.560      0.537
+Image Segmentation (UCI)                                 0.546          0.007  0.338   0.488           0.647             0.544         0.609     0.661    0.463                  0.592           0.012           0.540      0.585
+MNIST (10k, PCA-50)                                      0.608          0.002  0.046   0.013             NaN             0.576         0.526     0.289    0.043                  0.484             NaN           0.619      0.329
+Olivetti Faces (AT&T, PCA-50)                            0.845          0.833  0.833   0.019           0.840             0.850         0.897     0.817    0.350                  0.848           0.780           0.818      0.812
+Pen Digits (UCI)                                         0.776          0.735  0.708   0.710           0.735             0.781         0.769     0.720    0.708                  0.754           0.636           0.776      0.704
+Satimage / Landsat (UCI)                                 0.621          0.405  0.607   0.251           0.529             0.624         0.423     0.598    0.272                  0.621           0.506           0.611      0.612
+Seeds (UCI)                                              0.750          0.750  0.627   0.478           0.694             0.738         0.678     0.742    0.382                  0.713           0.763           0.739      0.728
+USPS (PCA-50)                                            0.763          0.002  0.582   0.018             NaN             0.772         0.719     0.587    0.366                  0.617             NaN           0.762      0.572
+Vehicle Silhouettes (UCI)                                0.167          0.014  0.122   0.012           0.188             0.165         0.159     0.120    0.012                  0.173           0.013           0.158      0.116
+Wine (UCI)                                               0.893          0.786  0.786   0.052           0.726             0.893         0.714     0.858    0.361                  0.882           0.901           0.893      0.876
+
+Mean rank (unsup_silhouette, NMI_mean):
+algo
+DRASC (proposed)                    3.31
+Ablation-B (adaptive only, g=0)     3.62
+LSC (anchor spectral)               4.54
+Spectral (kNN)                      4.92
+FINCH (2019)                        5.23
+DPC (Sci.2014)                      5.90
+GMM (EM)                            6.62
+BIRCH                               7.54
+k-means++                           7.62
+Spectral (RBF)                      8.85
+Agglomerative                       9.42
+DBSCAN                             10.46
+HDBSCAN                            10.62
+Wins (unsup_silhouette, NMI_mean):
+DRASC (proposed)                   3
+DPC (Sci.2014)                     2
+Spectral (RBF)                     2
+Spectral (kNN)                     2
+Ablation-B (adaptive only, g=0)    1
+BIRCH                              1
+FINCH (2019)                       1
+GMM (EM)                           1
+
+===== DRASC selection ARI =====
+selection                      eigengap  silhouette  stability  oracle
+dataset                                                               
+Banknote Authentication (UCI)    -0.003       0.148      0.036   0.514
+Breast Cancer Wisconsin (UCI)     0.719       0.737      0.719   0.743
+Digits 8x8 (UCI handwritten)      0.693       0.640      0.646   0.807
+Fashion-MNIST (10k, PCA-50)       0.446       0.441        NaN   0.447
+Image Segmentation (UCI)          0.344       0.371      0.351   0.378
+MNIST (10k, PCA-50)               0.374       0.395        NaN   0.466
+Olivetti Faces (AT&T, PCA-50)     0.612       0.582      0.582   0.649
+Pen Digits (UCI)                  0.678       0.627      0.773   0.800
+Satimage / Landsat (UCI)          0.499       0.499      0.513   0.602
+Seeds (UCI)                       0.798       0.786      0.798   0.836
+USPS (PCA-50)                     0.635       0.619        NaN   0.635
+Vehicle Silhouettes (UCI)         0.090       0.108      0.090   0.136
+Wine (UCI)                        0.884       0.915      0.931   0.931
+
+DRASC selection gap to oracle (ARI):
+selection                      eigengap  silhouette  stability  oracle
+dataset                                                               
+Banknote Authentication (UCI)     0.517       0.366      0.478     0.0
+Breast Cancer Wisconsin (UCI)     0.024       0.006      0.024     0.0
+Digits 8x8 (UCI handwritten)      0.114       0.167      0.160     0.0
+Fashion-MNIST (10k, PCA-50)       0.001       0.006        NaN     0.0
+Image Segmentation (UCI)          0.034       0.007      0.027     0.0
+MNIST (10k, PCA-50)               0.092       0.072        NaN     0.0
+Olivetti Faces (AT&T, PCA-50)     0.037       0.067      0.067     0.0
+Pen Digits (UCI)                  0.122       0.173      0.027     0.0
+Satimage / Landsat (UCI)          0.103       0.103      0.089     0.0
+Seeds (UCI)                       0.038       0.049      0.038     0.0
+USPS (PCA-50)                     0.000       0.016        NaN     0.0
+Vehicle Silhouettes (UCI)         0.047       0.028      0.047     0.0
+Wine (UCI)                        0.047       0.016      0.000     0.0
+
+===== robustness_noise =====
+algo          DRASC  GMM (EM)    LSC  Spectral-kNN  k-means++
+cfg                                                          
+noise_sd=0.0  0.664     0.518  0.694         0.666      0.468
+noise_sd=0.5  0.610     0.485  0.620         0.582      0.454
+noise_sd=1.0  0.439     0.454  0.426         0.409      0.426
+noise_sd=2.0  0.213     0.203  0.106         0.205      0.236
+noise_sd=4.0  0.012     0.012  0.008         0.012      0.016
+
+===== robustness_imbalance =====
+algo                DRASC  GMM (EM)    LSC  Spectral-kNN  k-means++
+cfg                                                                
+minority_frac=0.1   0.630     0.513  0.674         0.694      0.542
+minority_frac=0.25  0.688     0.528  0.624         0.664      0.492
+minority_frac=0.5   0.713     0.312  0.628         0.636      0.431
+minority_frac=1.0   0.664     0.434  0.691         0.666      0.466
+
+===== sensitivity Digits =====
+gamma    0.0    0.5    1.0    1.5    2.0    2.5    3.0    4.0
+k                                                            
+5      0.705  0.705  0.716  0.809  0.809  0.808  0.808  0.804
+7      0.707  0.710  0.710  0.804  0.802  0.802  0.807  0.804
+10     0.695  0.697  0.693  0.701  0.700  0.711  0.712  0.708
+15     0.677  0.677  0.670  0.665  0.664  0.718  0.717  0.724
+20     0.666  0.656  0.656  0.655  0.651  0.713  0.714  0.718
+30     0.654  0.647  0.646  0.643  0.639  0.693  0.691  0.685
+50     0.645  0.642  0.640  0.634  0.631  0.665  0.659  0.652
+
+===== sensitivity Pen =====
+gamma    0.0    0.5    1.0    1.5    2.0    2.5    3.0    4.0
+k                                                            
+5      0.674  0.676  0.782  0.783  0.782  0.782  0.782  0.782
+7      0.776  0.776  0.777  0.777  0.679  0.680  0.678  0.686
+10     0.748  0.750  0.779  0.785  0.800  0.783  0.784  0.784
+15     0.744  0.742  0.744  0.730  0.765  0.767  0.783  0.785
+20     0.740  0.730  0.728  0.728  0.731  0.764  0.767  0.769
+30     0.764  0.767  0.768  0.771  0.773  0.773  0.773  0.773
+50     0.624  0.625  0.627  0.629  0.769  0.770  0.769  0.771
+
+===== scalability MNIST =====
+                     n    sec  ARI_mean  NMI_mean
+dataset                                          
+MNIST (n=5000)    5000   1.20     0.425     0.595
+MNIST (n=10000)  10000   0.67     0.485     0.644
+MNIST (n=20000)  20000   4.66     0.494     0.663
+MNIST (n=40000)  40000   6.32     0.511     0.670
+MNIST (n=70000)  70000  10.07     0.526     0.684
