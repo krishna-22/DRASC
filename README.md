@@ -5,7 +5,13 @@ for DRASC, a one-parameter change to spectral clustering. DRASC multiplies the
 adaptive Gaussian affinity by a density-ratio gate raised to an exponent gamma.
 Setting gamma to zero recovers self-tuning spectral clustering, so the effect of
 the gate can be measured on its own.
-- By Saikiran Gogineni and Colleagues 
+- By Saikiran Gogineni and Colleagues
+
+## Available to the Community
+
+- pip install drasc
+
+  
 ## What is in this repository
 
 - The main Python script, which runs the full benchmark and writes every result file.
